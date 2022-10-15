@@ -1,0 +1,25 @@
+version: "2.0"
+
+intents:
+  - start_rent
+  - price_info
+  - end_rent
+  - show_location
+
+responses:
+  utter_start_rent:
+  - text: "Ok, rent started"
+
+  utter_price:
+  - text: "The price for your rental is $1/min"
+
+  utter_rent_ended:
+  - text: "End of rental confirmed"
+
+  utter_location:
+  - text: "The closest vehicle is 500 meter from you"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

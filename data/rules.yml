@@ -1,0 +1,25 @@
+version: "2.0"
+
+rules:
+
+
+- rule: Confirm the booking success
+  steps:
+  - intent: start_rent
+  - action: utter_start_rent
+
+- rule: Tell price
+  steps:
+  - intent: price_info
+  - action: utter_price
+
+- rule: Confirm end of rental
+  steps:
+  - intent: end_rent
+  - action: utter_rent_ended
+
+- rule: Tell where is the location of the car
+  steps:
+  - intent: show_location
+  - action: utter_location
+
